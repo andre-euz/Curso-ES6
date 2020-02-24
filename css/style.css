@@ -1,27 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f9f9f9;
+    background-color: #c1e8fa;    
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+#repo-form {
+    max-width: 600px;
+    margin: 10px auto 0;
+           
 }
 
 input {
     border-radius: 4px;
     border: 1px;
     border-style: solid;
-    border-color: #666666;
+    border-color: #2098D1;
     padding: 3px 6px;
     vertical-align: middle;
+    background-color: #f4fdfd;
+    
 }
+
+input::placeholder {
+    color: #2098D1;
+}
+
 button {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
 
-    background-color: #c2c2c2;
-    color: #666666;
+    background-color: #2098D1;
+    color: #FFF;
     
     border-radius: 4px;
     border: none;
-    padding: 4px 8px;
+    margin-top: 5px;
+    padding: 4px 61px;
+    display: flex;
+    justify-content: center;
 
-    display: inline-block;
+    display: flex;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -31,26 +56,34 @@ button {
     
 }
 button:hover{
-    background-color: #2098D1;        
-    color: white;
+    background-color: #FFF;   
+    border: 1px solid #2098D1;     
+    color: #2098D1;
+    cursor: pointer;
+}
+
+#repo-list ul{
+    margin: 0;    
+    padding: 0;
+    font-family: Helvetica sans-serif;        
+}
+
+#repo-list li{
+    list-style: none;
+    max-width: 600px;
+    margin: 10px auto 0;
+    padding: 20px;
+    background: #f4fdfd;
+    border: 1px solid #DDD;
+    border-radius: 5px;   
+    font-family: Helvetica, sans-serif;
 }
 
 img {
-    width: 80px;
+    width: 70px;
     float: left;
     margin-right: 10px;
     border-radius: 50%;
-}
-
-ul {
-    list-style: none;
-    margin: 0;    
-    padding: 0;
-    font-family: sans-serif;
-}
-li {
-    clear: both;
-    margin-top: 20px;
 }
 
 strong {
@@ -60,3 +93,22 @@ strong {
 p {
     margin: 5px 0;
 }
+
+.repo-url {
+    border-radius: 5px;
+    border: 2px solid #2098D1;
+    background: none;
+    color: #2098D1;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.repo-url:hover {
+    background: #2098D1;
+    color: #FFF;
+}
+

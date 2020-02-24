@@ -69,6 +69,7 @@ class App {
             let linkEl = document.createElement('a');
             linkEl.setAttribute('href',repo.html_url);
             linkEl.setAttribute('target','_blank');
+            linkEl.setAttribute('class','repo-url')
             linkEl.appendChild(document.createTextNode('Acessar'));
 
             let listItemEL = document.createElement('li');
